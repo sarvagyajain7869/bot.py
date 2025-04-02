@@ -1,7 +1,9 @@
 import os
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
+
+# Print environment variable values
+print("CHROME_BIN:", os.getenv("CHROME_BIN"))
+print("CHROMEDRIVER_PATH:", os.getenv("CHROMEDRIVER_PATH"))
+print("PLAYWRIGHT_BROWSERS_PATH:", os.getenv("PLAYWRIGHT_BROWSERS_PATH"))
 
 # Load paths from Railway environment variables
 chrome_bin = os.getenv("CHROME_BIN", "/usr/bin/google-chrome")
